@@ -78,9 +78,6 @@ class Toplevel1:
         self.Button1.configure(text='''确定''')
         self.Button1.configure(command=self.get_text)
 
-        self.Scroll = tk.Scrollbar(top)
-        self.Scroll.pack(side=tk.RIGHT, fill=tk.Y)
-
         self.Text1 = tk.Text(top)
         self.Text1.place(relx=0.074, rely=0.267, relheight=0.651, relwidth=0.854)
         self.Text1.configure(background="white")
@@ -92,9 +89,6 @@ class Toplevel1:
         self.Text1.configure(selectbackground="#c4c4c4")
         self.Text1.configure(selectforeground="black")
         self.Text1.configure(wrap="word")
-        self.Text1.config(yscrollcommand=self.Scroll.set)
-
-        self.Scroll.config(command=self.Text1.yview)
 
         self.Button2 = tk.Button(top)
         self.Button2.place(relx=0.64, rely=0.167, height=40, width=83)
