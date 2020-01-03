@@ -40,6 +40,8 @@ class Toplevel1:
         top.configure(highlightbackground="#d9d9d9")
         top.configure(highlightcolor="black")
 
+        top.title('图片文本识别工具')
+
         self.Label1 = tk.Label(top)
         self.Label1.place(relx=0.045, rely=0.05, height=50, width=108)
         self.Label1.configure(activebackground="#f9f9f9")

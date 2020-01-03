@@ -41,7 +41,7 @@ def api_use(encodestr):
     调用 api 识别文图片上的文字
     '''
     try:
-        cred = credential.Credential(你的密匙)
+        cred = credential.Credential("AKIDGLF0XrgnOmuoW0tOEpDQQBhz2rRn2mPq", "LUO3VihRvBD0XqujOtBE3dz93h5E7l9I")
         httpProfile = HttpProfile()
         httpProfile.endpoint = "ocr.tencentcloudapi.com"
 
